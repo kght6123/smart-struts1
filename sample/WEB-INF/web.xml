@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0"
+	metadata-complete="false">
+	
+	<display-name>Smart Struts</display-name>
+	
+	<description>Smart Struts</description>
+	
+	<!-- Struts (with debugging) -->
+	<servlet>
+		<servlet-name>action</servlet-name>
+		<servlet-class>jp.kght6123.smart.struts1.servlet.ActionServlet</servlet-class>
+		<init-param>
+			<param-name>config</param-name>
+			<param-value>
+				/WEB-INF/config/struts-config.xml,
+				/WEB-INF/config/struts-config-index.xml
+			</param-value>
+		</init-param>
+		<init-param>
+			<param-name>config/sample</param-name>
+			<param-value>
+				/WEB-INF/config/struts-config.xml,
+				/WEB-INF/config/struts-config-sample.xml
+			</param-value>
+		</init-param>
+		<init-param>
+			<param-name>debug</param-name>
+			<param-value>6</param-value>
+		</init-param>
+		<init-param>
+			<param-name>detail</param-name>
+			<param-value>6</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	
+	<servlet-mapping>
+		<servlet-name>action</servlet-name>
+		<url-pattern>*.do</url-pattern>
+		<url-pattern>*.json</url-pattern>
+		<url-pattern>*.xml</url-pattern>
+	</servlet-mapping>
+	
+	<!-- Session -->
+	<session-config>
+		<session-timeout>5</session-timeout>
+		<cookie-config>
+			<http-only>true</http-only>
+		</cookie-config>
+		<tracking-mode>URL</tracking-mode>
+	</session-config>
+	
+	<!-- The Usual Welcome File List -->
+	<welcome-file-list>
+		<welcome-file>index.do</welcome-file>
+	</welcome-file-list>
+	
+</web-app>

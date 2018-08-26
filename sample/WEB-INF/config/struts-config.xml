@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+<struts-config>
+	
+	<!-- ========== Data Source Configuration =============================== -->
+	<data-sources>
+		
+	</data-sources>
+	
+	<!-- ========== Global Exception Definitions ============================== -->
+	<global-exceptions>
+		<!-- <exception
+			key="errors.unknown"
+			path="/jsp/xxx99/xxx9999.jsp"
+			handler="jp.kght6123.struts.ExceptionLoggerHandler"
+			type="java.lang.Exception" /> -->
+	</global-exceptions>
+
+	<!-- ========== Global Forward Definitions =============================== -->
+	<global-forwards>
+		<!-- system error
+		<forward name="error" path="/jsp/xxx99/xxx9999.jsp" /> -->
+	</global-forwards>
+	
+	<!-- ========== Controller Configuration ================================ -->
+	<controller
+		maxFileSize="104857600"
+		memFileSize="0"
+		bufferSize="4096"
+		className="org.apache.struts.config.ControllerConfig"
+		multipartClass="org.apache.struts.upload.CommonsMultipartRequestHandler"
+		processorClass="org.apache.struts.action.RequestProcessor"
+		nocache="true" />
+	
+	<!-- ========== Message Resources Definitions ============================ -->
+	<message-resources parameter="resources.application" />
+	
+	<!-- ========== Plug Ins Configuration ================================= -->
+	<!--plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+		<set-property property="pathnames" value="/WEB-INF/validator-rules.xml, /WEB-INF/validation.xml" />
+	</plug-in-->
+	
+	<!-- Log4j logback
+	<plug-in className="jp.kght6123.struts.plugin.Log4jLoggerPlugIn"></plug-in> -->
+	
+</struts-config>

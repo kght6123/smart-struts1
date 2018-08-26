@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts-config PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 1.2//EN" "http://jakarta.apache.org/struts/dtds/struts-config_1_2.dtd">
+<struts-config>
+	
+	<!-- ========== Form Bean Definitions ================================== -->
+	<form-beans>
+		<form-bean name="SampleForm" type="jp.kght6123.smart.struts1.sample.form.SampleForm" />
+	</form-beans>
+	
+	<!-- ========== Action Mapping Definitions =============================== -->
+	<action-mappings>
+		<!-- 1.2 http://www.techscore.com/tech/Java/ApacheJakarta/Struts/24/ -->
+		<!-- action attribute catalog command forward include input multipartClass name parameter prefix roles suffix type -->
+		<!-- forward catalog command path -->
+		<action path="/index" name="SampleForm" scope="request"
+				 type="jp.kght6123.smart.struts1.sample.action.SampleAction">
+			<forward name="sample" path="/templates/[content-type][module]/sample" contextRelative="true" />
+		</action>
+		<action path="/Sample" name="SampleForm" scope="request"
+				 type="jp.kght6123.smart.struts1.sample.action.SampleAction">
+			<forward name="sample" path="/templates/[content-type][module]/sample" contextRelative="true" />
+		</action>
+	</action-mappings>
+	
+</struts-config>

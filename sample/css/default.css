@@ -1,0 +1,11 @@
+html {
+	-ms-overflow-style: -ms-autohiding-scrollbar;
+}
+@-ms-viewport {
+	width: device-width;
+	initial-scale: 1;
+}
+html, body {
+	margin: 0;
+	padding: 0.5em;
+}

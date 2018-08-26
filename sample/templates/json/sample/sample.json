@@ -1,0 +1,7 @@
+{
+  "form"  : {
+    "method"  : [[${SampleForm.method}]],
+    "_method" : [[${SampleForm._method}]]
+  },
+  "today" : [[${today}]]
+}

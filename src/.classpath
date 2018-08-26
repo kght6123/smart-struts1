@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/servlet-api.jar"/>
+	<classpathentry kind="var" path="TOMCAT_HOME/lib/jsp-api.jar"/>
+	<classpathentry kind="lib" path="/smart-struts1-sample/WEB-INF/lib/commons-beanutils-1.9.3.jar"/>
+	<classpathentry kind="lib" path="/smart-struts1-sample/WEB-INF/lib/commons-collections-3.2.2.jar"/>
+	<classpathentry kind="lib" path="/smart-struts1-sample/WEB-INF/lib/commons-dbutils-1.7.jar"/>
+	<classpathentry kind="lib" path="/smart-struts1-sample/WEB-INF/lib/commons-lang3-3.8.jar"/>
+	<classpathentry kind="lib" path="/smart-struts1-sample/WEB-INF/lib/slf4j-api-1.7.25.jar"/>
+	<classpathentry kind="lib" path="/smart-struts1-sample/WEB-INF/lib/struts-1.2.9-sp3.jar"/>
+	<classpathentry kind="lib" path="/smart-struts1-sample/WEB-INF/lib/thymeleaf-3.0.9.RELEASE.jar"/>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

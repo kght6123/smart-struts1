@@ -1,0 +1,43 @@
+
+@font-face {
+	font-family: YuGothicMedium;
+	src: local("Yu Gothic Medium");
+}
+@font-face {
+	font-family: "Helvetica Neue";
+	src: local("Helvetica Neue Regular");
+	font-weight: 100;
+}
+@font-face {
+	font-family: "Helvetica Neue";
+	src: local("Helvetica Neue Regular");
+	font-weight: 200;
+}
+html[lang=ja] {line-height : 1.15}
+
+[lang=ja] * {
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue","游ゴシック Medium","Yu Gothic",YuGothic,YuGothicMedium,"Hiragino Kaku Gothic ProN",Meiryo,sans-serif;
+	line-height: 1.7;
+}
+@media all and (-ms-high-contrast: none) {
+	[lang=ja] * {
+		font-family:Verdana, Meiryo, sans-serif;
+	}
+}
+@media all and (-ms-high-contrast: active) {
+	[lang=ja] * {
+		font-family:Verdana, Meiryo, sans-serif;
+	}
+}
+[lang=ja] h1, [lang=ja] h2, [lang=ja] h3, [lang=ja] h4, [lang=ja] h5, [lang=ja] h6 {
+	margin-bottom: .625rem;
+	font-family: inherit;
+	font-weight: bold;
+	line-height: 1.4;
+}
+[lang=ja] h1 {font-size:2.375rem}
+[lang=ja] h2 {font-size:1.875rem}
+[lang=ja] h3 {font-size:1.625rem}
+[lang=ja] h4 {font-size:1.375rem}
+[lang=ja] h5 {font-size:1.125rem}
+[lang=ja] h6 {font-size:.875rem}
